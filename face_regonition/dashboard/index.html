@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Face Recognition Dashboard</title>
+</head>
+<body>
+    <h1>Registered Faces</h1>
+    <div>
+        {% for face in faces %}
+            <img src="{{ url_for('static', filename='faces/' + face) }}" width="100">
+        {% endfor %}
+    </div>
+</body>
+</html>
