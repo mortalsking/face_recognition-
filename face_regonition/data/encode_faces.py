@@ -5,8 +5,8 @@ import tensorflow as tf
 import sklearn as sk
 from tensorflow import keras
 model = tf.keras.Model()
-import load_model
-import LabelEncoder
+from tensorflow.keras.models import load_model
+from sk.preprocessing import LabelEncoder
 import pickle
 
 
